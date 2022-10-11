@@ -55,8 +55,9 @@ img {
 }
 
 .intro {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* flex-direction: column; */
   padding: 1rem 2rem;
 }
 
@@ -107,6 +108,47 @@ footer {
 
 /* Add media query for tablet */
 
+@media only screen and (min-width: 38em) {
+
+  .intro {
+    /* flex-direction: row; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    padding: 1rem 2rem;
+  }
+
+  .intro-photo {
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .title {
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* how do i align top left */
+  }
+
+  button {
+    grid-row-end: 5;
+  }
+
+  /* header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  } */
+
+  /* h1 {
+    align-items: start;
+  } */
+
+  /* section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  } */
+
+}
 
 
 
