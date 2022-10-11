@@ -67,6 +67,12 @@ img {
   justify-content: space-between;
 }
 
+.title-small-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 h3 {
   padding: 1rem 2rem;
 }
@@ -113,7 +119,8 @@ footer {
   .intro {
     /* flex-direction: row; */
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
     padding: 1rem 2rem;
   }
 
@@ -130,8 +137,28 @@ footer {
   }
 
   button {
-    grid-row-end: 5;
+    grid-row-end: 4;
   }
+
+  .description {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .long {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .four-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .review-quotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.1rem;
+  }
+
 
   /* header {
     flex-direction: row;
