@@ -12,7 +12,6 @@ html {
 
 body {
   margin: 0;
-  /* include your font family and default line-height */
   @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;800&display=swap');
   font-family: 'Alegreya Sans', sans-serif;
   line-height: 1.5;
@@ -32,6 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 1em;
 }
 
 header nav ul {
@@ -136,11 +136,10 @@ footer {
 @media only screen and (min-width: 38em) {
 
   .intro {
-    /* flex-direction: row; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .intro-photo {
@@ -200,6 +199,10 @@ footer {
 
   .description {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .long {
+    grid-column-start: auto;
   }
 
   .long-desc {
