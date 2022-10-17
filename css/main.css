@@ -88,6 +88,10 @@ button {
   border-radius: 12px;
 }
 
+.button {
+  text-align: center;
+}
+
 .title-small-grid {
   display: flex;
   flex-direction: row;
