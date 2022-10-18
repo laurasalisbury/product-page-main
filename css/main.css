@@ -150,16 +150,13 @@ dd {
   padding: 0 0 0.5em 0;
 }
 
-
 /* Default styling for all screens ends here */
-
 /* Media query for tablet */
 
 @media only screen and (min-width: 38em) {
 
   .intro {
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
     column-gap: 2rem;
     padding: 1rem 1rem;
   }
@@ -173,12 +170,7 @@ dd {
     flex-direction: column;
     grid-row-start: 1;
     grid-row-end: 2;
-    /* how do i align top left */
   }
-
-  /* button {
-    grid-row-end: 4;
-  } */
 
   .description {
     grid-template-columns: 1fr 1fr;
@@ -198,23 +190,6 @@ dd {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 0.1rem;
   }
-
-
-  /* header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  } */
-
-  /* h1 {
-    align-items: start;
-  } */
-
-  /* section {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  } */
-
 }
 
 @media only screen and (min-width: 60em) {
